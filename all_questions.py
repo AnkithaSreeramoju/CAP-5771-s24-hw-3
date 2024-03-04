@@ -230,19 +230,18 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 3"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The cluster with the largest clustering entropy would be the one that has the most uniform distribution of categories, as this would indicate the most disorder. From the provided table, Cluster 3 seems to have the most uniform distribution across different land covers, and therefore, would have the largest clustering entropy."
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = " The cluster with the smallest clustering entropy would be the one with the least uniform distribution of categories, meaning most of the data points in the cluster belong to one category. Cluster 1 is predominantly water with 9000 out of 10000 points being water, indicating a very well-defined grouping and thus the smallest clustering entropy."
 
     return answers
-
 
 
 
