@@ -72,7 +72,7 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "The k-means method will probably place each centroid in the middle of each shaded circle by the conclusion of its execution given the uniform density of the shaded regions and the beginning centroids indicated by the "X" sign. This is because the centroids will move to the mean of the points inside their clusters."
+    answers["(a) explain"] = "The k-means method will probably place each centroid in the middle of each shaded circle by the conclusion of its execution given the uniform density of the shaded regions and the beginning centroids indicated by the X sign. This is because the centroids will move to the mean of the points inside their clusters."
 
     # type: bool (True/False)
     answers["(b)"] = True
