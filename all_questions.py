@@ -179,13 +179,13 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = {'B','C','E','F','G'}
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = {'D'}
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = {'A','H','M'}
 
     # type: set
     answers["(b) cluster 1"] = set()
@@ -225,6 +225,7 @@ def question6():
 
 
 
+
 # -----------------------------------------------------------
 def question7():
     answers = {}
@@ -250,7 +251,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -259,7 +260,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -268,8 +269,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
-
+    answers["(a) Matrix 3"] = "Dataset X"
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
 
@@ -277,16 +277,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster D"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster A"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster B"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster C"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
