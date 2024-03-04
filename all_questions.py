@@ -338,25 +338,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "Yes"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "No"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "For figure (a), DBSCAN could potentially identify the patterns of the nose, eyes, and mouth if the points representing these features are in relatively denser regions compared to the rest of the face. DBSCAN works by identifying 'core points' in dense regions and expanding clusters from them.For figure (b), which seems to have a more uniform distribution of points, DBSCAN might struggle if the density in the regions of the features (nose, eyes, mouth) is not sufficiently higher than the surrounding areas."
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "Yes"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "For both figures, K-Means could be used to find patterns if we specify the number of clusters corresponding to the number of features we want to identify (for example, two for the eyes, one for the nose, and one for the mouth). However, K-Means assumes that clusters are spherical and evenly sized, which might not be the case here, especially if the distribution of points for each feature is not circular or if they vary significantly in size."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "k-means"
 
     return answers
 
