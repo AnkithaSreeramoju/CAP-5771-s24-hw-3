@@ -310,26 +310,27 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = []
+    answers["(a)"] = [Hierarchical, Overlapping, Partial ]
 
     # type: list
-    answers["(b)"] = []
-
-    # type: list
-    answers["(c)"] = []
-
-    # type: list
-    answers["(d)"] = []
-
-    # type: list
-    answers["(e)"] = []
-
+    answers["(b)"] = [Partitional, Exclusive, Complete]
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(b) explain"] = "Students are assigned to distinct job categories without overlap (e.g., TA, RA, other on-campus jobs, jobless), fitting partitional and exclusive clustering. The requirement that assignments sum to 20 hours necessitates a complete categorization of all students."
+
+    # type: list
+    answers["(c)"] = [Partitional, Exclusive, Complete]
+    
+    # type: list
+    answers["(d)"] = [Hierarchical, Overlapping, Partial ]
+    
+    # type: list
+    answers["(e)"] = [Partitional, Exclusive, Complete]
+    # type: explanatory string (at least four words)
+    answers["(e) explain"] = "Grading inherently divides students into distinct, non-overlapping categories (e.g., letter grades), fitting partitional and exclusive clustering. All students receive a grade, necessitating a complete clustering approach."
+
+   
 
     return answers
-
-
 
 
 # -----------------------------------------------------------
