@@ -113,40 +113,40 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Despite the difference in the number of points, the uniform distribution of points and the identical distances between the circles imply that there is no immediate need for the centroids to shift out of their initial circles."
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
     answers["(b) Circle (b)"] = 0
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = " Circle B's centroids are expected to move to Circle C due to its higher point density, leaving Circle B with no centroids. Circle A retains its single centroid, and Circle C ends up with three."
 
     # type: int
     answers["(c) Circle (a)"] = 0
 
     # type: int
-    answers["(c) Circle (b)"] = 0
+    answers["(c) Circle (b)"] = 1
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "The single centroid from Circle A is likely to be shared with Circle B due to their closeness, leaving Circle A with no centroids, Circle B with one, and Circle C with its two initial centroids due to its large number of points."
 
     return answers
 
