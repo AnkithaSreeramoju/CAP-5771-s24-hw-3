@@ -158,16 +158,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = {"Group A" , "Group B"}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Groups A and B would be considered for merging because the single link technique merges clusters based on the closest pair of points, and these two groups have the closest pair of points among all."
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = {"Group A" , "Group C"}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = " Groups A and C would be considered for merging because the complete link technique considers the farthest pair of points for merging, and the farthest points of Groups A and C are closer than those of Groups A and B."
 
     return answers
 
