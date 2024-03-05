@@ -134,7 +134,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = " Circle B's centroids are expected to move to Circle C due to its higher point density, leaving Circle B with no centroids. Circle A retains its single centroid, and Circle C ends up with three."
+    answers["(b) explain"] = " One centroid per circle captures the uniform point distribution optimally in K-means, regardless of the distance between the circles."
 
     # type: int
     answers["(c) Circle (a)"] = 0
