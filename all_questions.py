@@ -128,10 +128,10 @@ def question4():
     answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 2
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = " Circle B's centroids are expected to move to Circle C due to its higher point density, leaving Circle B with no centroids. Circle A retains its single centroid, and Circle C ends up with three."
@@ -140,7 +140,7 @@ def question4():
     answers["(c) Circle (a)"] = 0
 
     # type: int
-    answers["(c) Circle (b)"] = 1
+    answers["(c) Circle (b)"] = 0
 
     # type: int
     answers["(c) Circle (c)"] = 2
@@ -179,19 +179,19 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = {'B','C','E','F','G'}
+    answers["(a) core"] = {'E','B','F','G','C','L','M','I'}
 
     # type: set
-    answers["(a) boundary"] = {'D'}
+    answers["(a) boundary"] = {'D','G'}
 
     # type: set
-    answers["(a) noise"] = {'A','H','M'}
+    answers["(a) noise"] = {'A','H'}
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = {'B','C','E','F','G','E','D'}
 
     # type: set
-    answers["(b) cluster 2"] = set()
+    answers["(b) cluster 2"] = {'I','J','L','M'}
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -200,19 +200,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = {'B','C','D','E','F','G','I','J','L','M'}
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = {'A','H'}
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {'A','B','C','D','E','F','G','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] = {'A'}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -221,8 +221,6 @@ def question6():
     answers["(c)-b cluster 4"] = set()
 
     return answers
-
-
 
 
 
@@ -254,39 +252,40 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "The blue indicates low distances, suggesting well-separated clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "Different patterns of colors suggest another set of cluster distributions."
 
     # type: string
-    answers["(a) Matrix 2"] = "Dataset Y"
+    answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "The blue indicates low distances, suggesting well-separated clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "All other colours indicates high distances, implying clear boundaries between clusters."
 
     # type: string
-    answers["(a) Matrix 3"] = "Dataset X"
-    # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "Diagonal entry corresponds to the distance of a point from itself."
+
+    # type: explanatory string (at least four words)
+    answers["(a) explain non-diag entries, Matrix 3"] = "Some green and yellow regions indicate overlapping or less distinct clusters."
 
     # type: string
-    answers["(b) Row 1"] = "Cluster D"
+    answers["(b) Row 1"] = "A"
 
     # type: string
-    answers["(b) Row 2"] = "Cluster A"
+    answers["(b) Row 2"] = "B"
 
     # type: string
-    answers["(b) Row 3"] = "Cluster B"
+    answers["(b) Row 3"] = "C"
 
     # type: string
-    answers["(b) Row 4"] = "Cluster C"
+    answers["(b) Row 4"] = "D"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -299,6 +298,7 @@ def question8():
 
     # type: explanatory string (at least four words)
     answers["(b) Row 4 explain"] = ""
+
 
     return answers
 
@@ -338,25 +338,24 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = "Yes"
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
-    answers["(a) Figure (b)"] = "No"
+    answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "For figure (a), DBSCAN could potentially identify the patterns of the nose, eyes, and mouth if the points representing these features are in relatively denser regions compared to the rest of the face. DBSCAN works by identifying 'core points' in dense regions and expanding clusters from them.For figure (b), which seems to have a more uniform distribution of points, DBSCAN might struggle if the density in the regions of the features (nose, eyes, mouth) is not sufficiently higher than the surrounding areas."
+    answers["(a) explain"] = "DBSCAN won't work due to similar densities of facial features, but K-means can cluster central facial features with the correct number of clusters set."
 
     # type: string
-    answers["(b) Figure (a)"] = "Yes"
+    answers["(b) Figure (a)"] = "No"
 
     # type: string
     answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "For both figures, K-Means could be used to find patterns if we specify the number of clusters corresponding to the number of features we want to identify (for example, two for the eyes, one for the nose, and one for the mouth). However, K-Means assumes that clusters are spherical and evenly sized, which might not be the case here, especially if the distribution of points for each feature is not circular or if they vary significantly in size."
-
+    answers["(b) explain"] = "DBSCAN fails with uniform point distribution, while K-means can identify features if the number of clusters reflects the number of facial features."
     # type: string
-    answers["(c)"] = "k-means"
+    answers["(c)"] = "DBSCAN"
 
     return answers
 
